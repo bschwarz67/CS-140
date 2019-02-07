@@ -1,0 +1,4 @@
+This is a project I did for the Fall 2018 semester at University of Memphis titled "Too Much To Watch."
+The program reads and parses a textfile containig information on movies in Tv shows, stores this data in objects,
+and puts the objects into a linkelist. It allows the user to filer the list based on contraints such as date and 
+rating.
