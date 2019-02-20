@@ -1,5 +1,5 @@
 This is a project created by Dr. James Plank in the University of Tennessee EECS department. It is made to demonstrate concepts such as pointers, objects, pointers to objects, and hash tables.
-The main purpose of the project is to perform operations on bitmatrices including addition, multiplication, inversrion, creation of submatrices. The user can also store and recall these
+The main purpose of the project is to perform operations on bitmatrices including addition, multiplication, inversion, creation of submatrices. The user can also store and recall these
 matrices from a hash table.
 
 The overall structure of this application consists of a header file bitmatrix.h where the classes in use are declared, bitmatrix.cpp where the functions for these classes or defined,
@@ -9,10 +9,10 @@ was written by me.
 To test-
 
 command line:
-g++ -c bitmatrix_editor.cpp
+g++ -c bit_matrix_editor.cpp
 g++ -c bitmatrix.cpp
-g++ -o bitmatrix_editor bitmatrix_editor.o bitmatrix.o
-./bitmatrix_editor
+g++ -o bit_matrix_editor bit_matrix_editor.o bitmatrix.o
+./bit_matrix_editor
 
 
 READ test.txt
