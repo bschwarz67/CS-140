@@ -1,4 +1,4 @@
-This is a project created by Dr. Brad Vander Zanden in the University of Tennessee EECS department. It is done to primarily the demonstrate the use of lists.
+This is a project created by Dr. Brad Vander Zanden in the University of Tennessee EECS department. It is done to primarily  demonstrate the use of lists.
 
 This project is a very basic implementation of the popular game candy crush, although the game is played at the command line. In this version of candy crush, only horizontal sequences adjacent to a chosen candy are "crushed" and converted to points.
 
