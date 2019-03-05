@@ -1,0 +1,49 @@
+This is a project created by Dr. Brad Vander Zanden in the University of Tennessee EECS department. It is done to primarily the demonstrate the use of lists.
+
+This project is a very basic implementation of the popular game candy crush, although the game is played at the command line. In this version of candy crush, only horizontal sequences adjacent to a chosen candy are "crushed" and converted to points.
+
+The overall structure of this application consists of a header file candyCrush.h where the class in use is declared, candyCrush.cpp where the functions for these classes are defined,
+and candyCrushClient.cpp, which is a client that allows the user to make use of the API. candyCrush.h was written my the Dr. Vander Zanden. candyCrush.cpp and candyCrushClient.cpp
+were written by me.
+
+To test-
+
+command line:
+
+g++ -c candyCrushClient.cpp
+g++ -c candyCrush.cpp
+g++ -o candyCrushClient candyCrush.o candyCrushClient.o
+./CandyCrushClient
+
+
+PRINT
+CHOOSE 0
+SCORE
+PRINT
+
+As the list of candy is randomized, there no specific output to look for.
+
+PRINT:
+Should show a list of 8 candy flavors, an indention, and a list of 2 candy flavors
+
+CHOOSE 0:
+SHould show a score update
+
+SCORE:
+Should show another score update 
+
+PRINT:
+Should show another list with the same indention but with any candies to the left of the "gap" left by the CHOICE moving to fill this gap,
+and newly generated sequences of flavors filling in the rest of the expected list display.
+
+
+commands (copied from lab notes of Brad Vander Zanden):
+
+PRINT: prints the candy list in the format stated above.
+
+CHOOSE index: chooses a flavor in the candy crush row.
+
+SCORE: prints the player's current score
+
+QUIT: quits
+
