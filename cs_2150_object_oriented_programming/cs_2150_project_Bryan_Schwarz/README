@@ -5,7 +5,7 @@ rating.
 
 To test:
 
--import to and IDE and run the client
+-import to an IDE and run the client
 -enter this line of input to filter out movies/shows made after 1923: 'add year < 1924'
 
 expected output:
