@@ -37,10 +37,10 @@ public class DataFileReader {
 			
 			
 			String year = "";
-			try { // from line parse beginYear, or begin year and end year out of the line string if one or both exist
+			try { // from line parse begin Year, or begin year and end year out of the line string if one or both exist
 				
 				
-				//compile a regex to search for the start year or begin year and end year in the line
+				//compile a regex to search for the begin year or begin year and end year in the line
 				String allMatches;
 				Matcher m = Pattern.compile("\\([0-9][0-9][0-9][0-9][-]?[0-9]?[0-9]?[0-9]?[0-9]?\\)").matcher(line);
 				if (m.find()) { //assign year string to found pattern if pattern matches
