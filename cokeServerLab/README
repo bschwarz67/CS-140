@@ -1,4 +1,4 @@
-This lab was made to demonstrate these concepts: sets, maps, objects created by dynamically allocating memory, and sharing data using
+This lab was made to demonstrate these concepts: sets, maps, managing dynamically allocated memory, and sharing data using
 pointers. Makefile and code_processor.cpp were written by me. code_processor.h and cp_tester.cpp were written by Dr. James Plank.
 
 This lab is the creation of methods for a "server" that processes and stores information for users pertaining to their MyCokeReward
