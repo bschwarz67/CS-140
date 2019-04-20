@@ -20,7 +20,7 @@ To test:
 
 
 
-There are various functionalities of this server written in a list of command line prompts below. All the command line templates are
+There are various commands for this server written in a list of command line prompts below. All the command line templates are
 written by Dr. James Plank at UTK.
 
 "PRIZE id points quantity description": Calls New_Prize() with the given arguments. Id is a single word. Description may be multiple words.
