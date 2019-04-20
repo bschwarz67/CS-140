@@ -3,7 +3,7 @@ The main purpose of the project is to perform operations on bitmatrices includin
 matrices from a hash table.
 
 The overall structure of this application consists of a header file bitmatrix.h where the classes in use are declared, bitmatrix.cpp where the functions for these classes or defined,
-and bit_matrix_editor.cpp, which is a client that allows the user to make use of the API. bit_matrix_editor.cpp and bitmatrix.h were written my the Dr. Plank and commented by me. bitmatrix.cpp
+and bit_matrix_editor.cpp, which is a client that allows the user to make use of the API. bit_matrix_editor.cpp and bitmatrix.h were written by Dr. Plank and commented by me. bitmatrix.cpp
 was written by me.
 
 To test-
