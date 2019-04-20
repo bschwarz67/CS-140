@@ -17,6 +17,7 @@ To test:
 . make
 . cpTester i.txt -
 
+Shoulder run without errors and promt you that a Prize, User, and Code have been added to the server correctly.
 
 
 
