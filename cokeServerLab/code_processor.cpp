@@ -15,8 +15,8 @@
 	
 	
 	/* 
-		Creates a Prize object and puts in into Prizes. Return -1 if: points <=0, quantity <= 0, Prize
-		designated by id already exist. Return 0 upon successful Prize creation
+		Creates a Prize object and puts an entry into Prizes with the id string as the key and the Prize object as the value.
+		Return -1 if: points <=0, quantity <= 0, Prize designated by id already exist. Return 0 upon successful Prize creation
 	*/
 
     int Code_Processor::New_Prize(string id, string description, int points, int quantity) {
@@ -51,7 +51,8 @@
     
     
 	/* 
-		Creates a User object and puts in into Names. Return -1 if: starting_points <=0, User
+		Creates a User object and puts an entry into Names with the username string as the key and
+		the User object as the value. Return -1 if: starting_points <=0, User
 		designated by username already exists. Return 0 upon successful User creation
 	*/
     
@@ -113,7 +114,8 @@
     
     
     /*
-		Add element to Phones using phone string as key, and User designated by username string as value. Return -1 if User designated
+		Add element to Phones using phone string as key, and User designated by username string as value. Also add
+		phone string to phone_numbers set of designated User. Return -1 if User designated
 		by username doesn't exist, Phones entry designated by phone already exists. If Phones entry is succesfully added return 0.
 	*/
     int Code_Processor::Add_Phone(string username, string phone) {
