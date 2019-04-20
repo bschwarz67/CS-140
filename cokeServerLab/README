@@ -20,8 +20,7 @@ To test:
 
 
 
-There are various commands for this server written in a list of command line prompts below. All the command line templates are
-written by Dr. James Plank at UTK.
+Here are commands for the server (copied from lab notes of James Plank):
 
 "PRIZE id points quantity description": Calls New_Prize() with the given arguments. Id is a single word. Description may be multiple words.
 "ADD_USER username starting_points realname": Calls New_User() with the given arguments. Username must be one word. Realname can contain any number of words.
