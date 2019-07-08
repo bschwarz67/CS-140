@@ -29,6 +29,6 @@ INSERT s: Calls Insert(string &s) to create node with s and put into hash table.
 PRESENT s: Calls Present(string &s) to check if s is present in node in hash table. 
 ERASE s: Calls Erase(string &s) to remove node with s from hash table. If s is not in table, does nothing.
 STRIP S: Calls Strip_All_Substring(string &s) to remove all nodes in the hash table that have s as a substring in their s.
-PRINT: Prints out every string string in stored in table. String proceeded by hash index where its node is stored, justified right, padded
+PRINT: Prints out every string in stored in table. String proceeded by hash index where its node is stored, justified right, padded
 4x, then a space.
 QUIT: Ends client program.
