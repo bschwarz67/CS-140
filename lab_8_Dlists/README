@@ -3,8 +3,7 @@ linked list, as well as the use of this list in a hash table application to stor
 
 This application has 2 parts. The double linked list part consists in dlist.h, written by Dr. Plank, and dlist.cpp, written by me. This
 is the implementation of the doubly linked list. The second part is dl_hash.h, written by Dr. Plank, and dl_hash.cpp, written by me. This 
-second part makes use of the doubly linked list implemented by me in the first part. A client, dl_hash_test.cpp, written by Dr. Plank,
-makes use of the hash table.
+second part is a hash table that makes use of the doubly linked list implemented by me in the first part. A client, dl_hash_test.cpp, written by Dr. Plank, makes use of the hash table.
 
 I have created a Makefile to facilitate the compilation of this program.
 
