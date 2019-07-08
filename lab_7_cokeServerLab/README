@@ -1,0 +1,38 @@
+This lab was made to demonstrate these concepts: sets, maps, managing dynamically allocated memory, and sharing data using
+pointers. Makefile and code_processor.cpp were written by me. code_processor.h and cp_tester.cpp were written by Dr. James Plank.
+
+This lab is the creation of methods for a "server" that processes and stores information for users pertaining to their MyCokeReward
+accounts. Instead of actual networking, input and output streams are used to transfer data to and from the server.
+
+There are two main type of objects, Prizes and Users. Pointers to these are stored in maps, with prize id and username 
+as respective keys. User object point totals and Prize quantities are updated as a Prize is redeemed for a User. 
+
+Users can be given phone numbers. This information is stored in the User field: set phone_numbers<string>. Phone information is 
+also stored in the Phones map, with a phone number string as a key and a pointer to User as the vaues. 
+
+A more detailed description of the server functionalities is described below.
+
+To test:
+. import cokeServerLab directory
+. make
+. cpTester i.txt -
+
+
+
+
+Here are commands for the server (copied from lab notes of James Plank):
+
+"PRIZE id points quantity description": Calls New_Prize() with the given arguments. Id is a single word. Description may be multiple words.
+"ADD_USER username starting_points realname": Calls New_User() with the given arguments. Username must be one word. Realname can contain any number of words.
+"DELETE_USER username": Calls Delete_User with the given username.
+"ADD_PHONE username phone-number": Makes the appropriate Add_Phone() call. Both username and phone-number must be one word.
+"REMOVE_PHONE username phone-number": Makes the appropriate Remove_Phone() call.
+"SHOW_PHONES username": Makes the appropriate Show_Phones() call.
+"ENTER_CODE username code": Makes the appropriate Enter_Code() call. The code should be one word.
+"TEXT_CODE phone code": Makes the appropriate Text_Code() call.
+"MARK_USED code ...": You can specify up to 19 codes on a line. It will call Mark_Code_Used() on each of these codes.
+"BALANCE username": calls Balance() and prints the output.
+"REDEEM username prize": calls Redeem().
+"DOUBLE_CHECK": calls Double_Check_Internals().
+"WRITE filename": calls Write() on the given filename. Explanation below.
+"QUIT": stops reading. You can simply end input too, and that will stop reading.
