@@ -1,8 +1,7 @@
 This is a project created by Dr. James Plank in the University of Tennessee EECS department. This lab is an implementation of a doubly 
-linked list, as well as the use of this list in a hash table application to store, remove, print, and remove and strip string containing
-a substring s in a hash table.
+linked list, as well as the use of this list in a hash table application to store, remove, print, and remove strings, as well as strip strings containing a substring s in a hash table.
 
-This application has 2 sub-parts. The double linked list part consists in dlist.h, written by Dr. Plank, and dlist.cpp, written by me. This
+This application has 2 parts. The double linked list part consists in dlist.h, written by Dr. Plank, and dlist.cpp, written by me. This
 is the implementation of the doubly linked list. The second part is dl_hash.h, written by Dr. Plank, and dl_hash.cpp, written by me. This 
 second part makes use of the doubly linked list implemented by me in the first part. A client, dl_hash_test.cpp, written by Dr. Plank,
 makes use of the hash table.
