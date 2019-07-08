@@ -1,0 +1,36 @@
+This is a project created by Dr. James Plank in the University of Tennessee EECS department. This lab is an implementation of a doubly 
+linked list, as well as the use of this list in a hash table application to store, remove, print, and remove and strip string containing
+a substring s in a hash table.
+
+This application has 2 sub-parts. The double linked list part consists in dlist.h, written by Dr. Plank, and dlist.cpp, written by me. This
+is the implementation of the doubly linked list. The second part is dl_hash.h, written by Dr. Plank, and dl_hash.cpp, written by me. This 
+second part makes use of the doubly linked list implemented by me in the first part. A client, dl_hash_test.cpp, written by Dr. Plank,
+makes use of the hash table.
+
+I have created a Makefile to facilitate the compilation of this program.
+
+
+To test-
+
+command line:
+make
+./dl_hash_test 50 'DL_Hash>'
+INSERT THOR
+STRIP THORS
+PRINT
+
+
+
+output should be:
+  10 THOR
+
+
+
+commands:
+INSERT s: Calls Insert(string &s) to create node with s and put into hash table. If s is already in table, does nothing.
+PRESENT s: Calls Present(string &s) to check if s is present in node in hash table. 
+ERASE s: Calls Erase(string &s) to remove node with s from hash table. If s is not in table, does nothing.
+STRIP S: Calls Strip_All_Substring(string &s) to remove all nodes in the hash table that have s as a substring in their s.
+PRINT: Prints out every string string in stored in table. String proceeded by hash index where its node is stored, justified right, padded
+4x, then a space.
+QUIT: Ends client program.
