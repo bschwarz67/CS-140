@@ -1,1 +1,68 @@
 
+This is a project created by Dr. James Plank in the University of Tennessee EECS department. This lab is an implementation of methods 
+in a binary search tree class. bstree.h, bstree_test.cpp, and some of bstree.cpp were written by Dr. Plank. I implemented:
+Postorder(), Preorder(), Depth(string key), Height(), IsAVL(), and Rotate(string key), as well as the recursive methods
+that are used by the methods mentioned above in bstree.cpp.
+
+I have created a Makefile to facilitate the compilation of this program.
+
+
+To test-
+
+command line:
+make
+./bstree_test - < test.txt
+
+
+
+output should be:
+
+    Kaitlyn Fortescue
+  Dylan Politician
+    Brianna Quintillion
+Adam Resistant
+
+Adam Resistant
+  Dylan Politician
+    Brianna Quintillion
+    Kaitlyn Fortescue
+
+    Brianna Quintillion
+    Kaitlyn Fortescue
+  Dylan Politician
+Adam Resistant
+
+Rotated.
+  Kaitlyn Fortescue
+Dylan Politician
+    Brianna Quintillion
+  Adam Resistant
+
+
+
+Commands:
+INSERT name phone-number ssn - creates node with date on command line, inserts node into bst was name as the key. Will not insert/create a new node if the tree already contains a node with name for its key.
+
+DELETE name - recursively deletes node specified by n and all nodes in its subtree. Prints "Not found." if selected node did not exist in the tree.
+
+PRINT - prints bst in inorder fashion
+
+PREORDER - prints the tree in preorder fashion, key of each node is printed in a separate line preceded by #of spaces = 2 * depth of node
+
+POSTORDER - prints the tree in preorder fashion, key of each node is printed in a separate line preceded by #of spaces = 2 * depth of node
+
+ROTATE name - does an AVL tree style rotation about node specified by name, prints "Rotated." if rotation could be done, "Did not rotate." if node selected was root, or did not exist in the tree.
+
+ISAVL - Prints "Yes" if the tree is AVL and "No" if it isn't
+
+DEPTH name - prints the number of edges between node specified by name and the root node
+
+HEIGHT - prints maximum number of edges between a lead node and the root node
+
+SIZE - prints number of nodes in the tree
+
+EMPTY - prints "Yes" if tree is empty and "No" if not
+
+FIND name - prints name, phone-number, and ssn of node designated by name, or "Not Found" if node designated by name isn't there
+
+SORT - prints a vector of nodes in the tree sorted by 
