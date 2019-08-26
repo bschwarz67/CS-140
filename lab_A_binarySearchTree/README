@@ -43,7 +43,7 @@ Dylan Politician
 Commands:
 INSERT name phone-number ssn - creates node with data on command line, inserts node into bst was name as the key. Will not insert/create a new node if the tree already contains a node with name for its key.
 
-DELETE name - recursively deletes node specified by n and all nodes in its subtree. Prints "Not found." if selected node did not exist in the tree.
+DELETE name - recursively deletes node specified by name and all nodes in its subtree. Prints "Not found." if selected node did not exist in the tree.
 
 PRINT - prints the tree in inorder fashion, key of each node is printed in a separate line preceded by #of spaces = 2 * depth of node
 
@@ -65,4 +65,4 @@ EMPTY - prints "Yes" if tree is empty and "No" if not
 
 FIND name - prints name, phone-number, and ssn of node designated by name, or "Not Found" if node designated by name isn't there
 
-SORT - prints a vector of nodes in the tree sorted by 
+SORT - prints a vector of nodes in the tree sorted by they key field
