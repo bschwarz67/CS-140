@@ -41,7 +41,7 @@ Dylan Politician
 
 
 Commands:
-INSERT name phone-number ssn - creates node with date on command line, inserts node into bst was name as the key. Will not insert/create a new node if the tree already contains a node with name for its key.
+INSERT name phone-number ssn - creates node with data on command line, inserts node into bst was name as the key. Will not insert/create a new node if the tree already contains a node with name for its key.
 
 DELETE name - recursively deletes node specified by n and all nodes in its subtree. Prints "Not found." if selected node did not exist in the tree.
 
