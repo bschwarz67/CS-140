@@ -281,7 +281,7 @@ int BSTree::recursive_height(BSTNode *n) {
 }
 
 
-
+/*recursive method to check whether or not the tree rooted as node n is AVL*/
 int BSTree::recursive_height_and_avl_check(BSTNode *n) {
 	int leftHeight = 0, rightHeight = 0;
 
