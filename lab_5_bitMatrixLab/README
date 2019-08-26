@@ -9,10 +9,10 @@ was written by me.
 To test-
 
 command line:
-g++ -c bit_matrix_editor.cpp
+g++ -c bitmatrix_editor.cpp
 g++ -c bitmatrix.cpp
-g++ -o bit_matrix_editor bit_matrix_editor.o bitmatrix.o
-./bit_matrix_editor
+g++ -o bitmatrix_editor bitmatrix_editor.o bitmatrix.o
+./bitmatrix_editor
 
 
 READ test.txt
