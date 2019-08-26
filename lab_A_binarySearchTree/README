@@ -45,7 +45,7 @@ INSERT name phone-number ssn - creates node with data on command line, inserts n
 
 DELETE name - recursively deletes node specified by n and all nodes in its subtree. Prints "Not found." if selected node did not exist in the tree.
 
-PRINT - prints bst in inorder fashion
+PRINT - prints the tree in inorder fashion, key of each node is printed in a separate line preceded by #of spaces = 2 * depth of node
 
 PREORDER - prints the tree in preorder fashion, key of each node is printed in a separate line preceded by #of spaces = 2 * depth of node
 
