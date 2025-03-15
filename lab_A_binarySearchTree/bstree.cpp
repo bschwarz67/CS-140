@@ -126,7 +126,8 @@ vector <void *>BSTree::Sorted_Vector()
 
 void BSTree::Print()
 {
-  recursive_inorder_print(0, sentinel->right);
+	recursive_inorder_print(0, sentinel->right);
+	cout << endl;
 }
 
 
@@ -134,11 +135,13 @@ void BSTree::Print()
 /*wrapper method that uses recursive postorder method to print tree preorder*/
 void BSTree::Postorder() {
 	recursive_postorder(0, sentinel->right);
+	cout << endl;
 }
 
 /*wrapper method that uses recursive_preorder method to print tree preorder*/
 void BSTree::Preorder() {
 	recursive_preorder(0, sentinel->right);
+	cout << endl;
 }
 
 /*returns the depth of the node specified by key. if no node specified by key exists, returns -1*/
@@ -289,7 +292,7 @@ int BSTree::recursive_height_and_avl_check(BSTNode *n) {
 		return 0;
 	}
 	else {		//in all other cases, get height of left and right subtrees
-		leftHeight = recursive_height_and_avl_check(n->left)
+		leftHeight = recursive_height_and_avl_check(n->left);
 		rightHeight = recursive_height_and_avl_check(n->right);
 	}
 	if(leftHeight == -2 || rightHeight == -2){		//if subtree has already been found to not be AVL, dont check if current subtree is AVL, just return -2
